@@ -1,16 +1,43 @@
 # Sistema de Controle de Filmes
+## Como Utilizar
+Para se utilizar o sistema, basta clonar o repositório, e, na pasta dos arquivos, iniciar o terminal. Em seguida, é só digitar 'node index.js' (no terminal) que o sistema irá rodar no url 'http://localhost:3000/'.
+
+A partir daí, recomendo o uso do Postman (https://www.postman.com/), um API para desenvolvimento que permite realizar diferentes requisições ao servidor. No caso dessa aplicação só serão realizados requests de GET e POST nos URLs que serão detalhados na seção de funções.
+
+O Postman é bem simples de usar, e existem muitos tutoriais explicando como realizar as requisições, então não vou me alongar muito. Mas, o que é preciso saber, é que, para consultar as listas de filmes ou pessoas, é necessário apenas realizar uma requisição GET para o url correto. 
+
+Já para adicionar algo em alguma lista, é necessário realizar uma requisição de POST e modificar o Body, inserindo dados no modelo JSON.  
 
 ## Funções: 
-##### Insere novos filmes
-##### Consulta filmes registrados
+##### Insere novos filmes ('/filmes', Método POST)
 
-##### Insere novos espectadores
-##### Consulta espectadores registrados
+##### Consulta filmes registrados ('/filmes', Método GET)
 
-##### Marca filmes assistidos
 
-##### Conta quantos filmes um espectador assistiu
-##### Conta quantos espectadores assistiram a um determinado filme
+##### Insere novos espectadores ('/espectadores', Método POST)
+
+##### Consulta espectadores registrados ('/espectadores', Método GET)
+
+
+##### Marca filmes assistidos ('/assistidos', Método POST)
+
+
+##### Mostra quantos filmes um espectador assistiu ('/historico_de_filmes', Método POST)
+
+##### Mostra quantos espectadores assistiram a um determinado filme ('/visualizacoes', Método POST)
+
+## Exemplos
+#### Marcar filme ( Madagascar) visto por espectador (Carlos)
+![assistidosprint](https://user-images.githubusercontent.com/78513841/127073033-4f60166b-2fca-40c6-8076-85409cc2cdeb.png)
+
+#### Cadastrando filme
+![filmespost](https://user-images.githubusercontent.com/78513841/127073034-2fbeef97-1929-4eb2-b5d3-f09d0dc359c4.png)
+
+#### Lista de espectadores cadastrados
+![getespectadores](https://user-images.githubusercontent.com/78513841/127073035-ae825550-a330-41d9-93f8-ea90942bf7bf.png)
+
+#### Número de filmes vistos pelo espectador
+![historico](https://user-images.githubusercontent.com/78513841/127073037-fa88ab27-c5bf-43b1-a056-f1518fb568da.png)
 
 
 
