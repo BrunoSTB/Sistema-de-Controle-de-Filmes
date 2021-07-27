@@ -6,7 +6,7 @@ A partir daí, recomendo o uso do Postman (https://www.postman.com/), um API par
 
 O Postman é bem simples de usar, e existem muitos tutoriais explicando como realizar as requisições, então não vou me alongar muito. Mas, o que é preciso saber, é que, para consultar as listas de filmes ou pessoas, é necessário apenas realizar uma requisição GET para o url correto. 
 
-Já para adicionar algo em alguma lista, é necessário realizar uma requisição de POST e modificar o Body, inserindo dados no modelo JSON.  
+Já para adicionar algo em alguma lista, é necessário realizar uma requisição de POST e modificar o Body, inserindo dados no modelo JSON. 
 
 ## Funções: 
 ##### Insere novos filmes ('/filmes', Método POST)
@@ -52,4 +52,6 @@ Consiste em um arquivo com as funções que irão realizar CRUD's, essas funçõ
 Arquivo principal do sistema. Consiste em um arquivo escrito em NodeJS, utilizando o framework web Express (https://expressjs.com/) para seu funcionamento. É esse o arquivo que lida com as requisições web.
 
 #### maindb.sqlite3:
-Arquivo de banco de dados do sistema. Foi utilizado o SQLite3 (https://www.sqlite.org/). O arquivo consiste em 3 tables: filmes, espectadores e filmes_Assistidos. A primeira se resume no titulo do filme e em seu id, a segunda possui o nome do espectador e seu devido id, a última table consiste em duas foreign keys (espectador_id e filme_id) para mapear quem assistiu qual filme. 
+Arquivo de banco de dados do sistema. Foi utilizado o SQLite3 (https://www.sqlite.org/). O arquivo consiste em 3 tables: filmes, espectadores e filmes_Assistidos. A primeira se resume no titulo do filme e em seu id, a segunda possui o nome do espectador e seu devido id, a última table consiste em duas foreign keys (espectador_id e filme_id) para mapear quem assistiu qual filme.
+
+![database](https://user-images.githubusercontent.com/78513841/127116860-f5cd73ea-22b9-4c37-ae7f-2a7305103fc8.png)
